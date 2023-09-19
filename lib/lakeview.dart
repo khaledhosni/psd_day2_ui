@@ -101,11 +101,22 @@ class ActionRow extends StatelessWidget {
             Text("Call")
           ],
         ),
-        Column(
-          children: [
-            Icon(Icons.call,size: 32,),
-            Text("Call")
-          ],
+        InkWell(
+          child: Column(
+            children: [
+              Icon(Icons.navigation,color: Colors.lime,size: 32,),
+              Text("Call")
+            ],
+          ),
+          onTap: (){
+
+             final  locationurl = "https://www.google.com/maps/search/?api=1&query=29.9919953,31.2956669";
+
+             var uri=Uri.parse(locationurl);
+            launchUrl(uri);
+
+
+          },
         ),
 
       ],
