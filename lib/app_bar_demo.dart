@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Image.asset("a.png"),
+            child: Image.asset("images/a.png"),
           ),
         ),
       ),
