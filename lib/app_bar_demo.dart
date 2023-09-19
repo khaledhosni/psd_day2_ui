@@ -9,10 +9,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
+        drawer: Drawer(),
         appBar: AppBar(
+
           title: Text('Material App Bar'),
           centerTitle: true,
-          leading: Icon(Icons.ad_units_outlined),
+        //  leading: Icon(Icons.ad_units_outlined),
           actions: [
             Container( margin: EdgeInsets.all(8),
                 child: InkWell(child: Icon(Icons.add),
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Text('Hello World'),
+            child: Image.asset("a.png"),
           ),
         ),
       ),
